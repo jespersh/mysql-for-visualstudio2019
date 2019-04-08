@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="79A115C9-B133-4891-9E7B-242509DAD272" Version="1.2.8" Language="en-US" Publisher="Oracle, Inc." />
+    <DisplayName>MySQL for Visual Studio</DisplayName>
+    <Description xml:space="preserve">Database design tools for MySQL</Description>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.0,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="MySql.VisualStudio.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="MySQL.VisualStudio.dll" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Data.dll" AssemblyName="MySql.Data, Version=6.10.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Data.Entity.EF6.dll" AssemblyName="MySql.Data.Entity.EF6, Version=6.10.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Web.dll" AssemblyName="MySql.Web, Version=6.10.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="Antlr3.Runtime.dll" AssemblyName="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=4186e2f4d936d3c2" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Debugger.dll" AssemblyName="MySql.Debugger, Version=1.2.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Debugger.VisualStudio.dll" AssemblyName="MySql.Debugger.VisualStudio, Version=1.2.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Parser.dll" AssemblyName="MySql.Parser, Version=1.2.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="MySql.Utility.dll" AssemblyName="MySQL.Utility, Version=7.0.1.0, Culture=neutral, PublicKeyToken=746de427ea93e675" />
+  </Assets>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+</PackageManifest>
